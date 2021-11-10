@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #dcbebe), to(#b12929));
+  background: linear-gradient(90deg, #dcbebe 5%, #b12929);
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bodyBG1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #dcbebe), to(#b12929));
+  background: linear-gradient(90deg, #dcbebe 25%, #b12929);
+}
+
+.bodyBG2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(45%, #dcbebe), to(#b12929));
+  background: linear-gradient(90deg, #dcbebe 45%, #b12929);
+}
+
+.bodyBG3 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #dcbebe), to(#b12929));
+  background: linear-gradient(90deg, #dcbebe 65%, #b12929);
+}
+
+.bodyBG4 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(85%, #dcbebe), to(#b12929));
+  background: linear-gradient(90deg, #dcbebe 85%, #b12929);
+}
+
+.main,
+.title {
+  text-align: center;
+  color: #f8f8f8;
+  -webkit-filter: drop-shadow(0 0 2px #000000);
+          filter: drop-shadow(0 0 2px #000000);
+  text-shadow: 0px 0px 10px #050505;
+}
+
+.slider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.slider .slide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  height: 80vh;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: #f0fff0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slider .slide__title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slider .slide.active {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -webkit-box-shadow: 3px 4px 9px 2px rgba(0, 0, 0, 0.685);
+          box-shadow: 3px 4px 9px 2px rgba(0, 0, 0, 0.685);
+}
+
+.slider .slide.active .slide__title {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in-out .4s;
+  transition: opacity .2s ease-in-out .4s;
+}
+/*# sourceMappingURL=main.css.map */
